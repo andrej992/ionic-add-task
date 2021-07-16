@@ -12,19 +12,13 @@ In order to start it open Power Shell window and type npm install. After install
 For starting it on Android or IOS device you should install Android studio and type the following commands:
 
 1. You have to add the platform:
-# iOS
-ionic cordova platform add ios
-# Android
-ionic cordova platform add android
+ionic cordova platform add ios #iOS
+ionic cordova platform add android #Android
 
 2. Use following command to create the build.
-# iOS
-ionic cordova build ios
-# Android
-ionic cordova build android
+ionic cordova build ios #iOS
+ionic cordova build android #Android
 
 3. Now, you can use any of the command to run the application.
-# iOS
-ionic cordova run ios --device
-# Android
-ionic cordova run android --device
+ionic cordova run ios --device #iOS
+ionic cordova run android --device #Android
