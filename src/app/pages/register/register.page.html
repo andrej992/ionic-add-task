@@ -1,0 +1,112 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{"sign_up"|translate}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+    <form [formGroup]="registerForm">
+        <ion-list>
+            <ion-radio-group formControlName="type">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label>{{"teacher"|translate}}</ion-label>
+                                <ion-radio slot="start" value="1"></ion-radio>
+                            </ion-item>
+
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label>{{"student"|translate}}</ion-label>
+                                <ion-radio slot="start" value="2"></ion-radio>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-radio-group>
+
+            <div *ngFor="let error of error_message.type">
+                <ion-label
+                        *ngIf="registerForm.controls.type.hasError(error.type) && (registerForm.controls.type.touched || registerForm.controls.type.dirty) || buttonClicked && !registerForm.controls.type.valid "
+                        class="error">
+                     {{error.message|translate}}
+                </ion-label>
+            </div>
+
+            <ion-item>
+                <ion-label position="stacked">{{"name"|translate}}</ion-label>
+                <ion-input type="text" formControlName="name"></ion-input>
+
+                <br>
+
+            </ion-item>
+            <div *ngFor="let error of error_message.name">
+                <ion-label
+                        *ngIf="registerForm.controls.name.hasError(error.type) && (registerForm.controls.name.touched || registerForm.controls.name.dirty) || buttonClicked && !registerForm.controls.name.valid "
+                        class="error">
+                    {{error.message|translate}}
+                </ion-label>
+            </div>
+
+            <ion-item>
+                <ion-label position="stacked">{{"email"|translate}}</ion-label>
+                <ion-input type="email" formControlName="email"></ion-input>
+                <br>
+
+            </ion-item>
+            <div *ngFor="let error of error_message.email">
+                <ion-label
+                        *ngIf="registerForm.controls.email.hasError(error.type) && (registerForm.controls.email.touched || registerForm.controls.email.dirty) || buttonClicked && !registerForm.controls.email.valid"
+                        class="error">
+                        {{error.message|translate}}
+                </ion-label>
+            </div>
+
+                <ion-item>
+                    <ion-label position="stacked">{{"password"|translate}}</ion-label>
+                    <ion-input type="password" formControlName="password"></ion-input>
+                    <br>
+
+                </ion-item>
+                <div *ngFor="let error of error_message.password">
+                    <ion-label
+                            *ngIf="registerForm.controls.password.hasError(error.type) && (registerForm.controls.password.touched || registerForm.controls.password.dirty) || buttonClicked && !registerForm.controls.password.valid "
+                            class="error">
+                         {{error.message|translate}}
+                    </ion-label>
+                </div>
+
+                <ion-item>
+                <ion-label position="stacked">{{"confirm_password"|translate}}</ion-label>
+                <ion-input type="password" formControlName="confirm_password"></ion-input>
+
+                <br>
+
+            </ion-item>
+            <div *ngFor="let error of error_message.confirm_password">
+                <ion-label
+                        *ngIf="registerForm.controls.confirm_password.hasError(error.type) && (registerForm.controls.confirm_password.touched || registerForm.controls.confirm_password.dirty) || buttonClicked && !registerForm.controls.confirm_password.valid "
+                        class="error">
+                     {{error.message|translate}}
+                </ion-label>
+
+            </div>
+
+            <ion-label
+                    *ngIf="registerForm.hasError('match') && (registerForm.controls.confirm_password.touched || registerForm.controls.confirm_password.dirty) && (registerForm.controls.password.touched || registerForm.controls.password.dirty) || buttonClicked && (!registerForm.controls.confirm_password.valid || !registerForm.controls.password.valid)"
+                    class="error">
+                {{ error_message.confirm_password[1].message|translate}}
+            </ion-label>
+
+        </ion-list>
+
+        <ion-button size="full" color="primary" (click)="register()">{{"sign_up"|translate}}</ion-button>
+    </form>
+
+</ion-content>

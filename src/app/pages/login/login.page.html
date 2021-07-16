@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{"log_in"|translate}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <form [formGroup]="registerForm">
+    <ion-list>
+        <ion-item>
+            <ion-label position="stacked">{{"email"|translate}}</ion-label>
+            <ion-input type="email"  formControlName="email"></ion-input>
+            <br>
+        </ion-item>
+        <div *ngFor="let error of error_message.email">
+            <ion-label
+                    *ngIf="registerForm.controls.email.hasError(error.type) && (registerForm.controls.email.touched || registerForm.controls.email.dirty) || buttonClicked && !registerForm.controls.email.valid"
+                    class="error">
+                {{error.message|translate}}
+            </ion-label>
+        </div>
+        <ion-item>
+            <ion-label position="stacked">{{"password"|translate}}</ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+            <br>
+        </ion-item>
+    </ion-list>
+        <div *ngFor="let error of error_message.password">
+            <ion-label
+                    *ngIf="registerForm.controls.password.hasError(error.type) && (registerForm.controls.password.touched || registerForm.controls.password.dirty) || buttonClicked && !registerForm.controls.password.valid"
+                    class="error">
+                    {{error.message|translate}}
+            </ion-label>
+        </div>
+
+    <ion-button size="full" color="primary" (click)="logIn()">{{"log_in"|translate}}</ion-button>
+    </form>
+
+</ion-content>

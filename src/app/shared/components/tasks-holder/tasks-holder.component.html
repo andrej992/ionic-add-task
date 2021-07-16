@@ -1,0 +1,12 @@
+<ion-card *ngFor="let task of tasks">
+    <img [src]="task.image" />
+    <ion-card-header>
+        <ion-card-subtitle>{{task.date | date: 'mediumDate'}}</ion-card-subtitle>
+        <ion-card-title>{{task.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        {{task.content}}
+    </ion-card-content>
+    <ion-button *ngIf="!isHistory && user.type == 1" size="full" (click)="editTask(task)">Edit</ion-button>
+    <ion-button *ngIf="!isHistory && user.type == 2" size="full">Schedule Notification</ion-button>
+</ion-card>

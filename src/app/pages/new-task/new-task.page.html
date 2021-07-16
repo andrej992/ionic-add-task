@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+            <span *ngIf="!data.id">New</span>
+            <span *ngIf="data.id">Edit</span>
+            Task
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+    <img *ngIf="data.image" [src]="data.image" alt="The Image">
+
+    <ion-item>
+        <ion-label position="stacked">Title</ion-label>
+        <ion-textarea [(ngModel)]="data.title"></ion-textarea>
+    </ion-item>
+    <ion-item>
+        <ion-label position="stacked">Content</ion-label>
+        <ion-textarea [(ngModel)]="data.content" auto-grow></ion-textarea>
+    </ion-item>
+
+    <ion-button size="full" (click)="openCamera()">Take new photo</ion-button>
+
+    <ion-item>
+        <ion-label>Due Date</ion-label>
+        <ion-datetime [(ngModel)]="data.selectedDate" min="2019" max="2022" placeholder="Select Due Date"></ion-datetime>
+    </ion-item>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="saveNewTask()">
+        <ion-fab-button>
+            <ion-icon name="checkmark"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+</ion-content>

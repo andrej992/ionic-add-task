@@ -1,0 +1,38 @@
+{
+    "log_in":"Einloggen",
+    "sign_up":"Registrieren",
+    "name":"Name",
+    "password":"Passwort",
+    "email":"Email",
+    "welcome":"Willkommen {{person}}",
+    "Please enter email":"Bitte geben Sie eine E-Mail",
+    "settings":"Einstellungen",
+    "Incorrect email":"Falsche Email",
+    "save":"Speichern",
+    "English":"Englisch",
+    "Macedonian":"Mazedonisch",
+    "German":"Deutsche",
+    "ok":"Okay",
+    "cancel":"Stornieren",
+    "The name is required":"Der Name ist erforderlich",
+    "Home":"Zuhause",
+    "Choose language":"Sprache wählen",
+    "teacher":"Lehrer",
+    "student":"Schüler",
+    "Menu":"Speisekarte",
+    "List":"Liste",
+    "Log Out":"Ausloggen",
+    "Are you sure that you want to log out?":"Sind Sie sicher, dass Sie sich abmelden möchten?",
+    "Yes":"Ja",
+    "No":"Nein",
+    "Please enter  password":"Bitte Passwort eingeben",
+    "The length of the password should be at least 6 character long":"Die Länge des Passworts sollte mindestens 6 Zeichen betragen",
+    "confirm_password":"Passwort bestätigen",
+    "Please enter correct name":"Bitte geben Sie den richtigen Namen ein",
+    "The length of the name should be at most twenty characters long":"Die Länge des Namens sollte höchstens zwanzig Zeichen betragen",
+    "The passwords do not match.":"Die Passwörter stimmen nicht überein.",
+    "The type is required":"Der Typ ist erforderlich"
+   
+
+  
+}

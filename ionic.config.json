@@ -1,0 +1,7 @@
+{
+  "name": "MyClass",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

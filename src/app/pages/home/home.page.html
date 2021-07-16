@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>{{"Home"|translate}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <app-tasks-holder *ngIf="tasks && tasks.length" [tasks]="tasks"></app-tasks-holder>
+
+    <ion-fab *ngIf="user.type == 1" vertical="bottom" horizontal="end" slot="fixed" (click)="openNewTaskPage()">
+        <ion-fab-button>
+            <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+</ion-content>

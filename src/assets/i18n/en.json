@@ -1,0 +1,39 @@
+{
+    "log_in":"Log in",
+    "sign_up":"Register",
+    "name":"Name",
+    "password":"Password",
+    "email":"Email",
+    "welcome":"Welcome {{person}}",
+    "Please enter email":"Please enter email",
+    "settings":"Settings",
+    "Incorrect email":"Incorrect email",
+    "save":"Save",
+    "English":"English",
+    "Macedonian":"Macedonian",
+    "German":"German",
+    "ok":"OK",
+    "cancel":"Cancel",
+    "The name is required":"The name is required",
+    "Home":"Home",
+    "Choose language":"Choose language",
+    "teacher":"Teacher",
+    "student":"Student",
+    "Menu":"Menu",
+    "List":"List",
+    "Log Out":"Log Out",
+    "Are you sure that you want to log out?":"Are you sure that you want to log out?",
+    "Yes":"Yes",
+    "No":"No",
+    "Please enter  password":"Please enter  password",
+    "The length of the password should be at least 6 character long":"The length of the password should be at least 6 character long",
+    "confirm_password":"Confirm password",
+    "Please enter correct name":"Please enter correct name",
+    "The length of the name should be at most twenty characters long":"The length of the name should be at most twenty characters long",
+    "The passwords do not match.":"The passwords do not match.",
+    "The type is required":"The type is required"
+    
+
+
+
+}
