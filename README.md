@@ -8,7 +8,12 @@ Multi platform application for adding and scheduling tasks, creating profile, ch
 3. Capacitor
 
 
-In order to start it open Power Shell window and type npm install. After installation type ionic serve and the application will start on the browser. 
+**2. In order to start it open Power Shell window and type:**
+```bash
+npm install 
+```
+
+After installation type ionic serve and the application will start on the browser. 
 
 For starting it on Android or IOS device you should install Android studio and type the following commands:
 
