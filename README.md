@@ -1,14 +1,14 @@
-# Ionic coffe shop application
+# Ionic tasking application
 Multi platform application for adding and scheduling tasks, creating profile, changing the language, as well as taking pictures with device's Camera and adding them to the task.
 
 **1. Requirements**
 
 1. Node.js
 2. Ionic
-3. Capacitor
+3. Cordova
 
 
-**2. In order to start it open Power Shell window and type:**
+**2. In order to install the required dependencies open Power Shell window and type:**
 ```bash
 npm install 
 ```
