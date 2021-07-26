@@ -22,20 +22,21 @@ npm start
 
 ***1. You have to add the platform:***
 ```bash
-ionic cordova platform add ios ----------> #iOS
+ionic cordova platform add ios #iOS
 
-ionic cordova platform add android --------> #Android
+ionic cordova platform add android  #Android
 ```
 
-2. Use following command to create the build.
+***2. Use following command to create the build:***
+```bash
+ionic cordova build ios #iOS
 
-ionic cordova build ios ----------> #iOS
+ionic cordova build android  #Android
+```
 
-ionic cordova build android ----------> #Android
+***3. Now, you can use any of the command to run the application:***
+```bash
+ionic cordova run ios --device  #iOS
 
-
-3. Now, you can use any of the command to run the application.
-
-ionic cordova run ios --device ----------> #iOS
-
-ionic cordova run android --device ----------> #Android
+ionic cordova run android --device  #Android
+```
