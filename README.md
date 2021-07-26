@@ -1,7 +1,7 @@
 # Ionic coffe shop application
 Multi platform application for adding and scheduling tasks, creating profile, changing the language, as well as taking pictures with device's Camera and adding them to the task.
 
-** 1. Requirements**
+**1. Requirements**
 
 1. Node.js
 2. Ionic
