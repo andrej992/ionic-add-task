@@ -13,20 +13,20 @@ For starting it on Android or IOS device you should install Android studio and t
 
 1. You have to add the platform:
 
-ionic cordova platform add ios #iOS
+ionic cordova platform add ios ----------> #iOS
 
-ionic cordova platform add android #Android
+ionic cordova platform add android --------> #Android
 
 
 2. Use following command to create the build.
 
-ionic cordova build ios #iOS
+ionic cordova build ios ----------> #iOS
 
-ionic cordova build android #Android
+ionic cordova build android ----------> #Android
 
 
 3. Now, you can use any of the command to run the application.
 
-ionic cordova run ios --device #iOS
+ionic cordova run ios --device ----------> #iOS
 
-ionic cordova run android --device #Android
+ionic cordova run android --device ----------> #Android
