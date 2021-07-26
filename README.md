@@ -13,16 +13,19 @@ Multi platform application for adding and scheduling tasks, creating profile, ch
 npm install 
 ```
 
-After installation type ionic serve and the application will start on the browser. 
+**3.After installation in order to start the application on Browser type:** 
+```bash
+npm start 
+```
 
-For starting it on Android or IOS device you should install Android studio and type the following commands:
+**4. For starting it on Android or IOS device you should install Android studio and type the following commands:**
 
-1. You have to add the platform:
-
+***1. You have to add the platform:***
+```bash
 ionic cordova platform add ios ----------> #iOS
 
 ionic cordova platform add android --------> #Android
-
+```
 
 2. Use following command to create the build.
 
